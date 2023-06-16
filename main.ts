@@ -1,3 +1,4 @@
+//% color="#AA278D" weight=100
 namespace turkishspeech {
     /**
      * Say something in turkish
