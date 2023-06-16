@@ -1,11 +1,6 @@
 //% color="#AA278D" weight=100
 namespace turkishspeech {
-    /**
-     * Say something in turkish
-     */ 
-    //% blockId=somethingidk
-    //% block= "saySomething %yazı %note"
-    //% note.min=0 note.max=99999
+    //% block
     export function saySomething(yazı: string, note: number): void {
 
         
