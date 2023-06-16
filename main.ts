@@ -1,4 +1,9 @@
 namespace TurkishSpeech {
+    /**
+     * Say something in turkish
+     */ 
+    //% blockId=turkishspeechsay
+    //% block= "say %yazı %note"
     export function say(yazı: string, note: number) {
 
         
