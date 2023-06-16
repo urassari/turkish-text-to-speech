@@ -1,4 +1,4 @@
-//% color="#AA278D" weight=100
+//% color="#E30A17" weight=100
 namespace turkishspeech {
     //% block
     export function say(yazi: string, note: number) {
