@@ -1,195 +1,193 @@
 //% color="#AA278D" weight=100
-namespace turkishspeech {
-    export function saySomething(yazı: string, note: number): void {
-
-        
-        for (let indeks = 0; indeks <= yazı.length - 1; indeks++) {
-                if (yazı.charAt(indeks) == "b") {
-                    music.rest(music.beat(BeatFraction.Half))
-                }
-                if (yazı.charAt(indeks) == " ") {
-                    music.rest(music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == ".") {
-                    music.rest(music.beat(BeatFraction.Double))
-                }
-                if (yazı.charAt(indeks) == ",") {
-                    music.rest(music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "r") {
-                    for (let index = 0; index < 4; index++) {
-                        music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                    }
-                }
-                if (yazı.charAt(indeks) == "t") {
-                    music.setVolume(68)
+namespace hello {
+    //% block
+    export function helloWorld(yazi: string, note: number) {
+        for (let indeks = 0; indeks <= yazi.length - 1; indeks++) {
+            if (yazi.charAt(indeks) == "b") {
+                music.rest(music.beat(BeatFraction.Half))
+            }
+            if (yazi.charAt(indeks) == " ") {
+                music.rest(music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == ".") {
+                music.rest(music.beat(BeatFraction.Double))
+            }
+            if (yazi.charAt(indeks) == ",") {
+                music.rest(music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "r") {
+                for (let index = 0; index < 4; index++) {
                     music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(140)
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                }
+            }
+            if (yazi.charAt(indeks) == "t") {
+                music.setVolume(68)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(140)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(193)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(255)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+            }
+            if (yazi.charAt(indeks) == "i") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "e") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "h") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(200, 300), music.beat(BeatFraction.Eighth))
+                    music.playTone(randint(200, 300), music.beat(BeatFraction.Sixteenth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "ç") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "c") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "d") {
+                music.setVolume(68)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(140)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(193)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(255)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+            }
+            if (yazi.charAt(indeks) == "ş") {
+                music.setTempo(9999)
+                for (let index = 0; index < 200; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "s") {
+                music.setTempo(9999)
+                for (let index = 0; index < 200; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "z") {
+                music.setTempo(9999)
+                for (let index = 0; index < 200; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "p") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "l") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(note, music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "f") {
+                music.setTempo(9999)
+                for (let index = 0; index < 200; index++) {
+                    music.playTone(0, music.beat(BeatFraction.Eighth))
+                    music.playTone(randint(200, 300), music.beat(BeatFraction.Eighth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "k") {
+                music.setVolume(68)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(140)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(193)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(255)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+            }
+            if (yazi.charAt(indeks) == "m") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
                     music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(193)
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "n") {
+                music.setTempo(9999)
+                for (let index = 0; index < 100; index++) {
                     music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(255)
+                    music.playTone(0, music.beat(BeatFraction.Sixteenth))
+                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "j") {
+                music.setTempo(9999)
+                for (let index = 0; index < 200; index++) {
                     music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                    music.playTone(0, music.beat(BeatFraction.Eighth))
                 }
-                if (yazı.charAt(indeks) == "i") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "e") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "h") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(200, 300), music.beat(BeatFraction.Eighth))
-                        music.playTone(randint(200, 300), music.beat(BeatFraction.Sixteenth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "ç") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "c") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "d") {
-                    music.setVolume(68)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(140)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(193)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(255)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                }
-                if (yazı.charAt(indeks) == "ş") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 200; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "s") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 200; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "z") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 200; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "p") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(randint(1000, 1500), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "l") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(note, music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "f") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 200; index++) {
-                        music.playTone(0, music.beat(BeatFraction.Eighth))
-                        music.playTone(randint(200, 300), music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "k") {
-                    music.setVolume(68)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(140)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(193)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(255)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                }
-                if (yazı.charAt(indeks) == "m") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "n") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 100; index++) {
-                        music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(0, music.beat(BeatFraction.Sixteenth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "j") {
-                    music.setTempo(9999)
-                    for (let index = 0; index < 200; index++) {
-                        music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                        music.playTone(0, music.beat(BeatFraction.Eighth))
-                    }
-                    music.setTempo(400)
-                }
-                if (yazı.charAt(indeks) == "g") {
-                    music.setVolume(68)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(140)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(193)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                    music.setVolume(255)
-                    music.playTone(note, music.beat(BeatFraction.Sixteenth))
-                }
-                if (yazı.charAt(indeks) == "a") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "u") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "ü") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "ğ") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "ı") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "v") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "y") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
-                if (yazı.charAt(indeks) == "o") {
-                    music.playTone(note, music.beat(BeatFraction.Whole))
-                }
+                music.setTempo(400)
+            }
+            if (yazi.charAt(indeks) == "g") {
+                music.setVolume(68)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(140)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(193)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+                music.setVolume(255)
+                music.playTone(note, music.beat(BeatFraction.Sixteenth))
+            }
+            if (yazi.charAt(indeks) == "a") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "u") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "ü") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "ğ") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "ı") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "v") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "y") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
+            if (yazi.charAt(indeks) == "o") {
+                music.playTone(note, music.beat(BeatFraction.Whole))
+            }
         }
-    
     }
 }
