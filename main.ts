@@ -1,7 +1,7 @@
 //% color="#AA278D" weight=100
-namespace hello {
+namespace turkishspeech {
     //% block
-    export function helloWorld(yazi: string, note: number) {
+    export function say(yazi: string, note: number) {
         for (let indeks = 0; indeks <= yazi.length - 1; indeks++) {
             if (yazi.charAt(indeks) == "b") {
                 music.rest(music.beat(BeatFraction.Half))
