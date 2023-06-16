@@ -4,6 +4,7 @@ namespace TurkishSpeech {
      */ 
     //% blockId=turkishspeechsay
     //% block= "say %yazı %note"
+    //% note.min=0 note.max=99999
     export function say(yazı: string, note: number) {
 
         
