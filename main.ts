@@ -1,6 +1,4 @@
-namespace TurkishTextToSpeech{
-
-
+namespace TurkishSpeech {
     export function say(yazı: string, note: number) {
 
         
@@ -191,7 +189,6 @@ namespace TurkishTextToSpeech{
                     music.playTone(note, music.beat(BeatFraction.Whole))
                 }
             }
+    
     }
-
-
 }
