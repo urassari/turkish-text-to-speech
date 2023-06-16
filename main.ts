@@ -194,7 +194,7 @@ namespace TurkishSpeech {
                 if (yazı.charAt(indeks) == "o") {
                     music.playTone(note, music.beat(BeatFraction.Whole))
                 }
-            }
+        }
     
     }
 }
