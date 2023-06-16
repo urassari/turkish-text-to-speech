@@ -2,9 +2,9 @@ namespace TurkishSpeech {
     /**
      * Say something in turkish
      */ 
-    //% blockId=turkishspeechsay
-    //% block= "saySomething %yazı %notee"
-    //% notee.min=0 note.max=99999
+    //% blockId=somethingidk
+    //% block= "saySomething %yazı %note"
+    //% note.min=0 note.max=99999
     export function saySomething(yazı: string, note: number): void {
 
         
