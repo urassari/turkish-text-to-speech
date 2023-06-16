@@ -1,4 +1,4 @@
-namespace TurkishSpeech {
+namespace turkishspeech {
     /**
      * Say something in turkish
      */ 
