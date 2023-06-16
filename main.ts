@@ -1,6 +1,5 @@
 //% color="#AA278D" weight=100
 namespace turkishspeech {
-    //% block
     export function saySomething(yazı: string, note: number): void {
 
         
